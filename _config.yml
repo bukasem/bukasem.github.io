@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "A Letter unrepliable"
+title                    : "purvanchal-deccan letter exchange service"
 title_separator          : "-"
 name                     : &name "el Shamimi"
 description              : &description "personal description"
