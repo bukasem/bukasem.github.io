@@ -1,16 +1,1 @@
 
-layout: default
-title: "Custom Research"
-permalink: /custom-research/
----
-
-<div class="content">
-  <h1>My Research Tools</h1>
-  <p>Custom HTML content here...</p>
-  
-  <!-- Embed markdown content -->
-  {% capture research_details %}
-  {% include research-details.md %}
-  {% endcapture %}
-  {{ research_details | markdownify }}
-</div>
