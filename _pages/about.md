@@ -13,7 +13,7 @@ bachchon ke saamne khuda ta'ala ki shakhsiyat kaisi pesh ki jaye? bachchon ko ka
 is par soch rhe hain
 
 **02/08/25-**
-![image1](
+![image1](/_pages/image1.jpg)
 
 
 
