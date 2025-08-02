@@ -1,16 +1,19 @@
 ---
 permalink: /
-title: "updates"
+title: "Updates:"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-01/08/25- 
+**01/08/25-** 
 bachchon ke saamne khuda ta'ala ki shakhsiyat kaisi pesh ki jaye? bachchon ko kaise btaya jaye khuda ta'ala kaun hain?
 
 is par soch rhe hain
+
+**02/08/25-**
+![image1](
 
 
 
