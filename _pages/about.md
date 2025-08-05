@@ -10,6 +10,9 @@ redirect_from:
 [**Reply**](https://docs.google.com/forms/d/e/1FAIpQLSfAAh_KQOIWVdx0PWdmuBx1Rt4vU3xc9UNUM4CgMl4Ckdqe1A/viewform?usp=dialog)
 
 
+**05/08/25-** 
+![image3](/_pages/image3.jpg)
+
 **03/08/25-** reading John d Rockefeller's letters to his son
 
 **02/08/25-**
