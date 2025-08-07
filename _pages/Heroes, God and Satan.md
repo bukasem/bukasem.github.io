@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-!
+![image1](/_pages/Screenshot_2025-08-07-06-48-19-34_0cc128b1ec2276a298bffe367041a458.jpg)
 
 **Background-** Lee Harvey Oswald is manipulated by the Bat and his "pawns" to shoot Former Major General of the US Army Mr. Edwin Walker. The main motivation behind it is his obsession with becoming America's next "Hero".
 
