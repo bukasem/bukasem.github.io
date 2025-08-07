@@ -10,7 +10,8 @@ redirect_from:
 [**Reply**](https://docs.google.com/forms/d/e/1FAIpQLSfAAh_KQOIWVdx0PWdmuBx1Rt4vU3xc9UNUM4CgMl4Ckdqe1A/viewform?usp=dialog)
 
 
-**07/08/25-** [Heroes, God and Satan](/_pages/Heroes, God and Satan.md)
+**07/08/25-** [Heroes, God and Satan](/_pages/Heroes,%20God%20and%20Satan.md)
+
 **05/08/25-** 
 ![image3](/_pages/image3.jpg)
 
