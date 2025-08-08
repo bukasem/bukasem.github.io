@@ -10,6 +10,8 @@ redirect_from:
 [**Reply**](https://docs.google.com/forms/d/e/1FAIpQLSfAAh_KQOIWVdx0PWdmuBx1Rt4vU3xc9UNUM4CgMl4Ckdqe1A/viewform?usp=dialog)
 
 
+**08/08/25-** feel dead and empty inside... as if a part of my soul is gone
+
 **07/08/25-** [Heroes, God and Satan](doc070825.md)
 
 **05/08/25-** 
