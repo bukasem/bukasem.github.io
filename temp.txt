@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <style>
+    /* ===== BASE STYLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Jersey 10", sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    .jersey-10-regular {
+      font-family: "Jersey 10", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      background: transparent;
+      border: none;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .navbar-brand {
+      font-size: 25px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .navbar-link {
+      font-size: 25px;
+      color: #B7415E; /* Deep rosy pink */
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .navbar-link:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* ===== LATEST UPDATE BOX ===== */
+    .latest-update {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .latest-update h2 {
+      font-size: 22px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .update-content {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .update-content img,
+    .update-content video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 12px 0;
+      display: block;
+    }
+
+    .last-updated {
+      font-size: 13px;
+      color: #777;
+      text-align: right;
+      margin-top: 12px;
+      font-style: italic;
+    }
+
+    /* ===== PREVIOUS UPDATES ===== */
+    .previous-updates {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .update-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .update-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .update-card p,
+    .update-card .content {
+      font-size: 17px;
+      color: #555;
+    }
+
+    .update-card img,
+    .update-card video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+      display: block;
+    }
+
+    /* ===== MOBILE RESPONSIVENESS ===== */
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .navbar-brand,
+      .navbar-link {
+        font-size: 22px;
+      }
+
+      .container {
+        padding: 16px;
+      }
+
+      .latest-update,
+      .update-card {
+        padding: 18px;
+      }
+
+      .latest-update h2 {
+        font-size: 20px;
+      }
+
+      .update-content,
+      .update-card .content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 NAVBAR (transparent, borderless) -->
+  <nav class="navbar">
+    <span class="jersey-10-regular navbar-brand">suukhe gulaab</span>
+    <a href="https://your-custom-url-here.com" class="jersey-10-regular navbar-link" target="_blank">link text</a>
+  </nav>
+
+  <!-- 🔹 MAIN CONTENT -->
+  <main class="container">
+    
+    <!-- ✨ LATEST UPDATE BOX -->
+    <section class="latest-update">
+      <h2 class="jersey-10-regular">Latest Update</h2>
+      <div class="update-content jersey-10-regular">
+        <!-- ✅ Put your text, image, or video here -->
+        <p>Welcome to the newest update! Add your announcement here.</p>
+        
+        <!-- Example image (uncomment & replace src to use) -->
+        <!-- <img src="images/photo.jpg" alt="Update image"> -->
+        
+        <!-- Example video (uncomment & replace src to use) -->
+        <!-- 
+        <video controls width="100%">
+          <source src="videos/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> 
+        -->
+      </div>
+      <div class="last-updated jersey-10-regular">
+        Last updated on <time datetime="2026-04-04">April 4, 2026</time>
+      </div>
+    </section>
+
+    <!-- 📚 PREVIOUS UPDATES -->
+    <section class="previous-updates">
+      
+      <!-- Example previous update #1 -->
+      <article class="update-card">
+        <h3 class="jersey-10-regular">March 28, 2026</h3>
+        <div class="content jersey-10-regular">
+          <p>Previous announcement or note goes here. You can embed images or videos just like in the latest update box.</p>
+        </div>
+      </article>
+
+      <!-- Example previous update #2 -->
+      <article class="update-card">
+        <h3 class="jersey-10-regular">March 15, 2026</h3>
+        <div class="content jersey-10-regular">
+          <p>Another past update. Keep adding these blocks as needed.</p>
+        </div>
+      </article>
+
+      <!-- ➕ Copy/paste more .update-card blocks for older entries -->
+
+    </section>
+
+  </main>
+
+</body>
+</html>
