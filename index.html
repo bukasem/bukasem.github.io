@@ -31,31 +31,44 @@
     }
 
     /* ===== NAVBAR ===== */
-    .navbar {
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-      background: transparent;
-      border: none;
-      z-index: 1000;
-      width: 100%;
-    }
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: transparent; /* Start fully transparent */
+  border: none;
+  z-index: 1000;
+  width: 100%;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+}
 
-    .navbar-brand {
-      font-size: 25px;
-      color: #333;
-      text-decoration: none;
-    }
+/* ✅ Translucent background when scrolled */
+.navbar.scrolled {
+  background: rgba(255, 248, 250, 0.9); /* Very light pink */
+  backdrop-filter: blur(8px); /* Optional: subtle blur effect (like frosted glass) */
+  -webkit-backdrop-filter: blur(8px); /* For Safari */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Optional: subtle depth */
+}
 
-    .navbar-link {
-      font-size: 25px;
-      color: #B7415E; /* Deep rosy pink */
-      text-decoration: none;
-      transition: opacity 0.2s ease;
-    }
+.navbar-brand {
+  font-size: 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-link {
+  font-size: 25px;
+  color: #B7415E; /* Deep rosy pink */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-link:hover {
+  opacity: 0.85;
+}
 
     .navbar-link:hover {
       opacity: 0.85;
@@ -214,7 +227,7 @@
       <article class="update-card">
         <h3 class="jersey-10-regular">note</h3>
         <div class="content jersey-10-regular">
-          <img src="hijr.png" alt="ishq yeh hai ke ba dast e khaar gul bosi karey aur kaanton ka pataa bhi na chaley, gham e jaan bhi ho jigar sozi bhi hriday taap bhi">
+          <img src="hijr.png" alt="ishq yeh hai ke ba dast e khaar gul bosi karey aur kaanton ka lutf aaye, gham e jaan bhi ho jigar sozi bhi hriday taap bhi">
         </div>
         <div class="last-updated jersey-10-regular">
         Last updated on <time datetime="2026-04-04">April 4, 2026</time>
@@ -222,6 +235,18 @@
       </article>
       
   </main>
-
+  
+<script>
+  // Add translucent background to navbar on scroll
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) { // Trigger after scrolling 10px
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+  
 </body>
 </html>
