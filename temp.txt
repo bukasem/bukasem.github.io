@@ -30,37 +30,49 @@
       font-style: normal;
     }
 
-    /* ===== NAVBAR ===== */
-    .navbar {
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-      background: transparent;
-      border: none;
-      z-index: 1000;
-      width: 100%;
-    }
+   /* ===== NAVBAR ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: transparent; /* Start fully transparent */
+  border: none;
+  z-index: 1000;
+  width: 100%;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+}
 
-    .navbar-brand {
-      font-size: 25px;
-      color: #333;
-      text-decoration: none;
-    }
+/* ✅ Translucent background when scrolled */
+.navbar.scrolled {
+  background: rgba(255, 248, 250, 0.9); /* Very light pink */
+  backdrop-filter: blur(8px); /* Optional: subtle blur effect (like frosted glass) */
+  -webkit-backdrop-filter: blur(8px); /* For Safari */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Optional: subtle depth */
+}
 
-    .navbar-link {
-      font-size: 25px;
-      color: #B7415E; /* Deep rosy pink */
-      text-decoration: none;
-      transition: opacity 0.2s ease;
-    }
+.navbar-brand {
+  font-size: 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-link {
+  font-size: 25px;
+  color: #B7415E; /* Deep rosy pink */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-link:hover {
+  opacity: 0.85;
+}
 
     .navbar-link:hover {
       opacity: 0.85;
     }
-
     /* ===== MAIN CONTENT ===== */
     .container {
       max-width: 800px;
